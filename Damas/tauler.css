@@ -1,0 +1,146 @@
+            * {
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+            .main_container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100vh;
+                height: 100vh;
+                background-color: rebeccapurple;
+            }
+            /*mistyrose     99ddcf   */
+            body {
+                background-color: mediumpurple;
+            }
+            
+            .up_subcontainer {
+                width: 90%;
+                height: 90%;
+                float: left;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 0);
+                background-color: pink;
+            }
+            
+            .down_subcontainer {
+                width: 90%;
+                height: 10%;
+                float: left;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 0);
+                background-color: lemonchiffon;
+            }
+
+            .c_rosas{
+                background-color:pink;
+                width: 12.5%;
+                height: 12.5%;
+                float: left;
+                position: relative;
+            }
+
+            .c_blancas{
+                background-color:white;
+                width: 12.5%;
+                height: 12.5%;
+                float: left;
+                position: relative;
+            }
+
+            @media only screen and (orientation: portrait) {
+                div.main_container {
+                    width: 100vw;
+                    height: 100vw;
+                }
+            }
+
+            .left_text{
+                width: 49%;
+                height: 100%;
+                position: flex;
+                direction: flex-row;
+                float: left;
+                /*display: inline-block;*/
+                text-align: center;
+                font-family: "Lucida Console", "Courier New", Fantasy;
+                font-weight: bold;
+            }
+
+            .right_text{
+                width: 49%;
+                height: 100%;
+                position: flex;
+                direction: flex-row;
+                float: left;
+                text-align: center;
+                font-family: "Lucida Console", "Courier New", Fantasy;
+                font-weight: bold;
+            }
+
+            .mid_text{
+
+                width: 2%;
+                height: 100%;
+                position: flex;
+                float: left;
+                direction: flex-row;
+                background-color: rebeccapurple;
+            }
+
+            .circulito1{
+                border-radius: 50%;
+                border-width: 2%;
+                background-color: pink;
+            }
+
+            .circulito2{
+                border-radius: 50%;
+                border-width: 2%;
+                background-color: white;
+            }
+
+            .reiniciar{
+                position: relative;
+                float: right;
+                font-family: "Lucida Console", "Courier New", Fantasy;
+                font-weight: bold;
+                background-color: #438243;
+            }
+
+            .token1 {
+                background-color: #b00b69;
+                border: 1px solid ;
+                border-radius: 100%;
+                margin: 0 auto;
+            }
+
+            .token2 {
+                background-color: lightgoldenrodyellow ;
+                border: 1px solid ;
+                border-radius: 100%;
+                margin: 0 auto;
+            }
+
+            .token1R {
+                background-color: #b00b69;
+                border: 5px solid ;
+                border-radius: 100%;
+                margin: 0 auto;
+            }
+
+            .token2R {
+                background-color: lightgoldenrodyellow ;
+                border: 5px solid ;
+                border-radius: 100%;
+                margin: 0 auto;
+            }
+
+            .red_token {
+                background: radial-gradient(circle at 30% 30%, rgb(255, 0, 0, 1), rgb(0, 0, 0, 1));
+            }
