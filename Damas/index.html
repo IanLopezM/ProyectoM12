@@ -1,0 +1,106 @@
+<html>
+	<head>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<link href="tauler.css" rel="stylesheet" type="text/css">
+		<link href="modal.css" rel="stylesheet" type="text/css">
+		<style>
+
+		</style>
+	</head>
+	<body>
+
+		<button class="reiniciar">Reiniciar Partida</button>
+
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="text-align: center !important;" id="staticBackdropLabel">DAMAS</h5>
+      </div>
+      <div class="modal-body">
+        <h5 class="modal-title" id="staticBackdropLabel">Jugador 1</h5>
+        <input id="player1Input" type="text" ></input>
+        <h5 class="modal-title" id="staticBackdropLabel">Jugador 2</h5>
+        <input id="player2Input" type="text" ></input>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="btnCerrarModal" class="btn btn-primary" style="background-color: black; border-color: #b00b69;" >Empezar Partida</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+		<div class="main_container">
+			<div class="up_subcontainer">
+				<div id="chess">
+			  </div>
+			</div>
+			<div class="down_subcontainer">
+				<div id="" class="left_text">
+					<label id="player1"></label> <br>
+					<label id="cantidadF1" class="circulito1"></label>
+				</div>
+				<div class="mid_text">
+				</div>
+				<div class="right_text">
+					<label id="player2"></label> <br>
+					<label id="cantidadF2" class="circulito2"></label>
+				</div>
+			</div>
+		</div>
+
+		<div id="infoWin" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" style="text-align: center !important;" id="staticBackdropLabel">DAMAS</h5>
+		      </div>
+		      <div class="modal-body">
+		      	<h1 id="winner"></h1>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" id="btnCerrarModalWin" class="btn btn-primary" style="background-color: black; border-color: #b00b69;" >X</button>
+		      </div>
+		    </div>
+		  </div>
+		</div> 
+
+		<div id="infoNoMove" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" style="text-align: center !important;" id="staticBackdropLabel">DAMAS</h5>
+		      </div class="modal-body">
+		      <div >
+		      	<h1 id="nomove"></h1>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" id="btnCerrarModalNoMove" class="btn btn-primary" style="background-color: black; border-color: #b00b69;" >X</button>
+		      </div>
+		    </div>
+		  </div>
+		</div> 
+
+
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+	<script src="App.js"></script>
+	<script src="Joc.js"></script>
+	<script src="Tauler.js"></script>
+	<script src="Fitxa.js"></script>
+	
+	<script type="text/javascript">
+		$( document ).ready(function() {
+    	$('#staticBackdrop').modal('show')
+		});
+		a = new App();
+	</script>
+</html>
