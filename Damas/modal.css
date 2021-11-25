@@ -1,54 +1,6 @@
-.modal-title{
-    font-size: 60px;
-    text-align: center !important;
- 
+.modal-content {
+	background-color: pink !important;
 }
-
-.modal {
-    max-width:  95vw;
-    max-height: 95vh;
-}
-
-
-.modal-header{
-    text-align: center;
-  
-}
-
-
-input{
-    border-radius: 10px;
-}
-
-
-
-.damas {
-    font-size: 60px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.modal-content{
-    margin-top: 70px;
-    background-image: linear-gradient(to bottom right, pink, pink);
-    text-align: center;
-    width: 500px;
-    height: 500px;
-  
-
-}
-
-.btn{
-    border-radius: 10px;
-    border: black;
-    background-color: pink;
-}
-
-.empezar{
-    background-color: black;
-}
-
 
 .infoWin {
     display: block;
